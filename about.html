@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+        }
+
+        .hero-section {
+            position: relative;
+        }
+
+        .carousel-item {
+            height: 578px;
+            position: relative;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        .carousel-inner {
+            background-color: #000; 
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-text {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px #000;
+            text-align: center;
+        }
+
+        .about-section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-section p {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: justify;
+        }
+
+        .info-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            margin: 40px auto 70px;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+        }
+
+        .info-container img {
+            flex: 1;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .info-content {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .info-content h3 {
+            margin-top: 0;
+        }
+
+        .creative-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+        background-color:;
+        margin-bottom: 40px;
+    }
+
+    .creative-section:nth-child(even) {
+        background-color:;
+    }
+
+    .creative-section .content {
+        max-width: 500px;
+        position: relative;
+        padding: 40px;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #ffffff, #d7d7d7);
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    }
+
+    .creative-section .content h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+        color: #333;
+    }
+
+    .creative-section .content p {
+        text-align: justify;
+        font-size: 1.1rem;
+        color: #666;
+    }
+
+    .creative-section .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 8px;
+        background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    }
+
+footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="logo.png" alt="Logo" style="width: 150px; height: auto;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products/Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="1800">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.6435-9/87266552_2888226381234463_3248169253546754048_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f798df&_nc_ohc=kewdJ5vfkJgQ7kNvgGjTVPZ&_nc_ht=scontent.fmnl8-1.fna&oh=00_AYAV8d_rRCEu17OreJiv6ogrIbTullN5ERBuxnGRylWbMw&oe=66B3F472">
+                    <div class="overlay">
+                        <div class="hero-text">Welcome to Cabalen!
+</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.6435-9/86737022_2888226047901163_4521742754639773696_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f798df&_nc_ohc=hAng-7tXvCUQ7kNvgGmJE2b&_nc_ht=scontent.fmnl8-1.fna&oh=00_AYDW_6a4oyi6MwC03LDZPIDdyucWVYRvfEabWa0IVD8zWg&oe=66B40852" alt="Second slide">
+                    <div class="overlay">
+                        <div class="hero-text">We are your Sulit, Sarap, <br> Pinoy Handaan Restaurant.</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t1.6435-9/87026346_2888225217901246_919728286790057984_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f798df&_nc_ohc=s7BdmSxeVcEQ7kNvgHkHnUa&_nc_ht=scontent.fmnl8-1.fna&oh=00_AYDcRytz75pxGMKqgjFClIEBGnPo_Wkxwvy-hcOS_-MgiQ&oe=66B3FDF7" alt="Third slide">
+                    <div class="overlay">
+                        <div class="hero-text">Join Our Community Now.</div>
+                    </div>
+                </div>                
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>At Cabalen, the dining experience doesn’t stop at just good food – diners also get to enjoy time with family, making it top of mind restaurant for important family occasions and celebrations.
+
+ Cabalen introduced the best way to enjoy Kapampangan cuisine through an array of freshly cooked, beautifully presented food in a buffet line. At present, the Cabalen boasts of 41 branches located strategically around Metro Manila, North and South Luzon, Visayas and Mindanao.</p>
+    </section>
+
+    <section class="info-container">
+        <img src="https://images.summitmedia-digital.com/esquiremagph/images/2022/04/05/MicrosoftTeams-image%20(24).png" alt="About Us Image">
+        <div class="info-content">
+            <h3>THE FOUNDER
+MA. ESTELA O. NIEVERA</h3>
+            <p>PRESIDENT & CEO
+Seasoned restaurateur Ma. Estela O. Nievera, “Maritel” to friends and family, does not believe in secret recipes. Her indisputable focus on excellence-in food as in business-is the driving force behind her and Cabalen Group of Restaurant’s iconic success. But that’s just half of her winning formula. The other half is basic value of integrity, which is applied to delivering on promises and exceeding customer satisfaction. For her, knowledge of the business alone will not cut it. It’s the right attitude towards business, towards life, and toowards other people that make all the difference.</p>
+        </div>
+    </section>
+
+<section class="photo-portfolio">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center mb-4">
+                <img src="https://pbs.twimg.com/media/Fdp9qm1VQAAKXMC.jpg" class="img-fluid rounded" alt="Photo 1">
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <img src="https://4.bp.blogspot.com/-c5CS_QVaxWI/WKMpv0RC1dI/AAAAAAAAITo/9Iv6bJqYNpQFFWyKN5Kmap27vw3RrdzlwCLcB/s1600/20170208_134632-1.jpg" class="img-fluid rounded" alt="Photo 2">
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <img src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t31.18172-8/12711279_1027973700593083_8075201254539406094_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f798df&_nc_ohc=UdtX_BGMMOAQ7kNvgH5l9HV&_nc_ht=scontent.fmnl8-2.fna&oh=00_AYAxr6AO_UkxzEnocW1jwXofbfClkhXMdCL0tiRrysFeqg&oe=66B412D7" class="img-fluid rounded" alt="Photo 3">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <section class="creative-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content">
+                    <div class="background"></div>
+                    <h2>Our Mission</h2>
+                    <p><b>CUSTOMERS</b>
+
+To serve our customers with the highest level of integrity and satisfaction by providing value for money and quality food and services.
+
+<b>PARTNERS</b>
+
+To work collaboratively with each other and strengthen partnerships through our credibility, integrity, and honesty.<br>
+
+<b>EMPLOYEES</b>
+
+To provide our employees a stable work environement with equal opportunity for learning and professional growth through the Cabalen Culinary Training Institute. 
+<br>
+<b>CORPORATE SOCIAL RESPONSIBILITY</b>
+
+To take part in saving the planet by implementing company-wide, eco-friendly, and sustainable practices. To give back to the community establishing Cabalen Para sa Kabataan, which helps less fortunate children.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <div class="background"></div>
+                    <h2>Our Vision</h2>
+                    <p>To continue to grow, evolve, and solidify its place in the food business as the number one Filipino buffet concept in the Philippines . By consistently providing the highest quality of food and service that are attuned to global standard, Cabalen endeavors to bring the best of Filipino heritage cuisine to the world while improving the lives of its employees and doing its part in saving the environment..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer>
+    <div class="container">
+        <p>Contact us: +1 234 567 890 | cabalen@gmail.com</p>
+        <p>This website is for educational purposes only.</p>
+    </div>
+</footer>
+</body>
+</html>
